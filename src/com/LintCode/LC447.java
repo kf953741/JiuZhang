@@ -3,7 +3,7 @@ package com.LintCode;
 /**
  * Created by Administrator on 2016/1/18.
  */
-public class LC29 {
+public class LC447 {
     class ArrayReader{
         public int get(int index){return index;};
     }
