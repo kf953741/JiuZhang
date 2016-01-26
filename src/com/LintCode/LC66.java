@@ -15,7 +15,17 @@ public class LC66 {
         ArrayList<Integer> preorder = new ArrayList<Integer>();
         if (root==null)
             return preorder;
-        
+        stack.push(root);
+        while (!stack.empty())
+        {
+            TreeNode node = stack.pop();
+            preorder.add(node.val);
+            if (node.right != null)
+                stack.push(node.right);
+            if (node.left !=null)
+                stack.push(node.left);
+
+        }
         return preorder;
 
     }
